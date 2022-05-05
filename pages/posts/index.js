@@ -1,6 +1,5 @@
-
-import Hero from '../components/home-page/Hero'
-import FeaturedPosts from '../components/home-page/FeaturedPosts'
+import React from 'react'
+import AllPosts from '../../components/posts/AllPosts'
 
 const DUMMY_POSTS = [
   {slug : 'getting-started-with-next-js',
@@ -20,11 +19,10 @@ const DUMMY_POSTS = [
   date : '2022-02-13'},
 ]
 
-export default function HomePage() {
+export default function AllPostsPage() {
   return (
     <>
-      <Hero />
-      <FeaturedPosts posts={DUMMY_POSTS} />
+      <AllPosts posts={DUMMY_POSTS} />
     </>
   )
 }
